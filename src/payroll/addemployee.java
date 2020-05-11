@@ -27,6 +27,7 @@ public class addemployee {
          double rate= obj.nextDouble();
          PayrollDatabase md=new PayrollDatabase();
          AddHourlyEmployee hemp=new AddHourlyEmployee(id, name, adrs,rate, md);
+         hemp.execute();
              break;
          case 2:
          System.out.println("Enter salary for employee");
@@ -34,6 +35,7 @@ public class addemployee {
         
          PayrollDatabase md2=new PayrollDatabase();
          AddSalariedEmployee semp=new AddSalariedEmployee(id, name, adrs, Salary, md2);
+         semp.execute();
          break;
          
          case 3:
@@ -43,6 +45,7 @@ public class addemployee {
          double crate= obj.nextDouble();
          PayrollDatabase md3=new PayrollDatabase();
          AddCommissionedEmployee cemp=new AddCommissionedEmployee(id,name,adrs,salary,crate,md3);
+         cemp.execute();
          break;
          default:
              break;
